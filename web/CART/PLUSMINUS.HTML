@@ -1,0 +1,28 @@
+<html>
+<body>
+<div>
+   <input type="button" value="-" class="qty-minus">
+   <input type="number" value="1" class="qty">
+   <input type="button" value="+" class="qty-plus">
+</div>
+<div>
+   <input type="button" value="-" class="qty-minus">
+   <input type="number" value="1" class="qty">
+   <input type="button" value="+" class="qty-plus">
+</div>
+<div>
+   <input type="button" value="-" class="qty-minus">
+   <input type="number" value="1" class="qty">
+   <input type="button" value="+" class="qty-plus">
+</div>
+<script src="jquery-3.2.1.min.js" ></script>
+6:15 PM 7/20/2019<script>
+$(document).on('click', '.qty-plus', function () {
+   $(this).prev().val(+$(this).prev().val() + 1);
+});
+$(document).on('click', '.qty-minus', function () {
+   if ($(this).next().val() > 0) $(this).next().val(+$(this).next().val() - 1);
+});
+</script>
+</body>
+</html>

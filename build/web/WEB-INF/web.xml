@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>insert</servlet-name>
+        <servlet-class>insert</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>loginI</servlet-name>
+        <servlet-class>loginI</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>registerD</servlet-name>
+        <servlet-class>registerD</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>email</servlet-name>
+        <servlet-class>email</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>insert</servlet-name>
+        <url-pattern>/insert</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>loginI</servlet-name>
+        <url-pattern>/loginI</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>registerD</servlet-name>
+        <url-pattern>/registerD</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>email</servlet-name>
+        <url-pattern>/email</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
